@@ -5,7 +5,9 @@
     "serve": "concurrently \"npm run serve-api\" \"npm run serve-static\"",
     "serve-api": "nodemon -w ./server --exec \"babel-node server --presets es2015,stage-0\"",
     "serve-static": "live-server client --host=localhost --port=8080 --watch=./",
-    "lint": "eslint server client"
+    "lint": "eslint server client",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -17,7 +19,8 @@
     "express-validation": "^1.0.2",
     "http-status": "^1.2.0",
     "morgan": "^1.8.0",
-    "resource-router-middleware": "^0.6.0"
+    "resource-router-middleware": "^0.6.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
@@ -34,5 +37,6 @@
     "joi": "^13.6.0",
     "live-server": "^1.2.0",
     "nodemon": "^1.9.2"
-  }
+  },
+  "snyk": true
 }
