@@ -8,7 +8,7 @@
     "lint": "eslint server client"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^1.6.0",
     "body-parser": "^1.13.3",
     "cors": "^2.7.1",
     "cross-env": "^5.2.0",
